@@ -183,7 +183,7 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
         g.drawImage(image, 20, 10, 192, 96, this);
 
         // Desenha um quadrado cheio.
-        if (light.getEmitter().read()){
+        if (light.getEmitter().read()) {
             g.setColor(light.getColor());
         } else {
             g.setColor(light.getOffColor());

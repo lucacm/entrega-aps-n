@@ -20,21 +20,20 @@ public class Light implements Receiver {
         return Color.BLACK;
     }
 
-    public Color getOffColor() {
-        return offColor;
-    }
-
-    public Emitter getEmitter() {
-        return emitter;
-    }
-
-
     public void setColor(Color color) {
         this.color = color;
     }
 
-    public void setOffColor(Color color){
+    public Color getOffColor() {
+        return offColor;
+    }
+
+    public void setOffColor(Color color) {
         this.offColor = color;
+    }
+
+    public Emitter getEmitter() {
+        return emitter;
     }
 
     @Override

@@ -4,7 +4,6 @@ public class XnorGate extends Gate {
     private final NandGate left;
     private final NandGate upper;
     private final NandGate bottom;
-    private final NandGate right;
     private final NandGate inverter;
 
 
@@ -22,7 +21,7 @@ public class XnorGate extends Gate {
         bottom.connect(0, left);
 
         // nand direito
-        right = new NandGate();
+        NandGate right = new NandGate();
         right.connect(0, upper);
         right.connect(1, bottom);
 
